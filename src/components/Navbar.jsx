@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../services/axiosInstance";
-import { logout } from "../store/authSlice";
+import { logout, login } from "../store/authSlice";
 
 function Navbar() {
   const authStatus = useSelector((state) => state.auth.status);
